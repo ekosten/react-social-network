@@ -1,0 +1,13 @@
+.navItem a {
+    display: block;
+    padding: 2px 4px;
+    text-decoration: none;
+    color: #333333;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navItem a.active {
+    border: 1px solid #dadada;
+    background-color: rgba(255,255,255,.75);
+}

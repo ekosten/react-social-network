@@ -5,7 +5,7 @@ const Navigation = (props) => {
     const navItems = props.navItems.map( el => <NavItem name={el.name} href={el.href} /> )
     return (
         <nav>
-            <ul>
+            <ul className="clear-list-styles">
                 {navItems}
             </ul>
         </nav>
