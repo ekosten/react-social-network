@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import state from './state'
+import {addNewMessage} from "./state";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App state={state} addNewMessage={addNewMessage} />
   </React.StrictMode>,
   document.getElementById('root')
 );
