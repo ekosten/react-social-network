@@ -1,3 +1,5 @@
+import {renderEntireDocument} from "./render";
+
 const state = {
     navItems: [
         { id: 1, name: "Profile", href: "/profile" },
@@ -20,6 +22,7 @@ export let addNewMessage = (msgText) => {
         msgText: msgText
     }
     state.messages.push(message)
+    renderEntireDocument(state)
 }
 
 export default state

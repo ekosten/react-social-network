@@ -1,17 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import state from './state'
-import {addNewMessage} from "./state";
 import * as serviceWorker from './serviceWorker';
+import {renderEntireDocument} from "./render";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App state={state} addNewMessage={addNewMessage} />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+renderEntireDocument(state);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
